@@ -48,9 +48,10 @@ public class Ruin {
 		}
 		
 		System.out.println("You won " + winDays + " days");
-		double winRate = winDays/totalSimulations;
+		double win=winDays;
+		double winRate = win/totalSimulations;
 		System.out.println("Your win rate is: " + winRate);
-		double ruinRate = (totalSimulations - winDays)/totalSimulations;
+		double ruinRate = (totalSimulations - win)/totalSimulations;
 		System.out.println("Your ruin rate is: " + ruinRate);
 
 	}
